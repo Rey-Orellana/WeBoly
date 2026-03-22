@@ -1,29 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="Style.css" />
+    <title>Cannavis - Tienda Oficial</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- HEADER (Flexbox) -->
     <header class="header">
-      <div class="logito">LOGO</div>
+      <div class="logo">🌿 Cannavis</div>
+
+      <!-- Menú de navegación con ID para JavaScript -->
       <nav class="nav" id="nav-menu">
-        <a href="" class="nav-link">Casa</a>
-        <a href="" class="nav-link">Contac</a>
-        <a href="" class="nav-link">Services</a>
+        <a href="#" class="nav-link">Inicio</a>
+        <a href="#" class="nav-link">Productos</a>
+        <a href="#" class="nav-link">Contacto</a>
       </nav>
-      <button class="btn-menu" id="menu-btn">☰</button>
+
+      <!-- Botón hamburguesa con ID -->
+      <button class="menu-btn" id="menu-btn">☰</button>
     </header>
+
+    <!-- HERO SECTION (Grid) -->
     <section class="hero">
       <div class="hero-content">
         <h1>Bienestar Natural</h1>
         <p>Productos de CBD de la más alta calidad</p>
-        <a href="" class="btn">Ver Productos</a>
+        <a href="#" class="btn">Ver Productos</a>
       </div>
-      <div class="hero-image">🌿</div>
+      <div class="hero-image">🌿<!-- Imagen placeholder --></div>
     </section>
+
     <!-- PRODUCTOS (Grid profesional) -->
     <section class="productos">
       <h2>Nuestros Productos</h2>
@@ -82,6 +90,34 @@
         <p>Todas las tarjetas</p>
       </div>
     </section>
-    <script src="Script.js"></script>
+
+    <!-- CONTACTO (Grid) -->
+    <section class="contacto">
+      <div class="contacto-info">
+        <h2>Contactanos</h2>
+        <p>📧 info@cannavis.com</p>
+        <p>📱 +34 123 456 789</p>
+        <p>📍 Madrid, España</p>
+      </div>
+      <form class="contacto-form">
+        <input type="text" placeholder="Nombre" required />
+        <input type="email" placeholder="Email" required />
+        <textarea placeholder="Mensaje" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <!-- FOOTER (Flexbox) -->
+    <footer class="footer">
+      <p>© 2024 Cannavis - Todos los derechos reservados</p>
+      <div class="social">
+        <a href="#">📘</a>
+        <a href="#">📷</a>
+        <a href="#">🐦</a>
+      </div>
+    </footer>
+
+    <!-- JavaScript al final del body -->
+    <script src="script.js"></script>
   </body>
 </html>
