@@ -119,6 +119,82 @@ body {
   text-align: center;
   font-size: 10rem;
 }
+/* ========== PRODUCTOS ========== */
+.productos {
+  padding: 5rem 5%;
+  background-color: var(--blanco);
+}
+
+.productos h2 {
+  text-align: center;
+  color: var(--verde-oscuro);
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+  position: relative;
+}
+
+.productos h2:after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: var(--verde-claro);
+  margin: 1rem auto 0;
+  border-radius: 2px;
+}
+/* GRID PROFESIONAL */
+.productos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.producto-card {
+  background: var(--blanco);
+  border-radius: 15px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: var(--sombra);
+  transition: all 0.3s;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.producto-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.producto-img {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+}
+
+.precio {
+  color: var(--verde-oscuro);
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+.btn-comprar {
+  background-color: var(--verde-oscuro);
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 1rem;
+  font-weight: 600;
+  width: 100%;
+}
+
+.btn-comprar:hover {
+  background-color: var(--marron);
+  transform: scale(1.02);
+}
 
 @media (max-width: 768px) {
   .menu-btn {
